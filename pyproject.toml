@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyanpost"
+version = "0.1.0"
+description = "Track An Post parcels via the public An Post web API"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["httpx>=0.24"]
+
+[project.scripts]
+anpost-track = "anpost.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
