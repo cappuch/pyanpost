@@ -1,13 +1,29 @@
 from anpost.client import AnPostTracker
 from anpost.exceptions import AnPostError, AnPostHTTPError, AnPostParseError
-from anpost.models import ItemSummary, TrackingEvent, TrackingResult
+from anpost.models import (
+    AddOnFeature,
+    ItemSummary,
+    MailService,
+    MailType,
+    PostalRateResult,
+    PostalRateResponse,
+    RateZone,
+    TrackingEvent,
+    TrackingResult,
+)
 
 __all__ = [
+    "AddOnFeature",
     "AnPostTracker",
-    "ItemSummary",
-    "TrackingEvent",
-    "TrackingResult",
     "AnPostError",
     "AnPostHTTPError",
     "AnPostParseError",
+    "ItemSummary",
+    "MailService",
+    "MailType",
+    "PostalRateResult",
+    "PostalRateResponse",
+    "RateZone",
+    "TrackingEvent",
+    "TrackingResult",
 ]
